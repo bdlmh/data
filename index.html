@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel转换工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>lmh-Excel转换工具</h1>
+        <div class="upload-container">
+            <div class="file-upload">
+                <label for="originalFile">上传原始文件:</label>
+                <input type="file" id="originalFile" accept=".xlsx, .xls" />
+            </div>
+            <div class="file-upload">
+                <label for="translationFile">上传中间文件（中英文对照）:</label>
+                <input type="file" id="translationFile" accept=".xlsx, .xls" />
+            </div>
+            <button onclick="handleFile()">转换并下载</button>
+            <button onclick="handleAndTranslateFile()">生成英文表格</button>
+            <!-- 预留其他功能的按钮 -->
+            <!-- 在<body>标签内添加这个按钮 -->
+            <button onclick="handlefinalFile()">处理总表</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
